@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Wulan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* HEADER NAV */
+        header {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        /* PROFILE */
+        .profile {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .profile img {
+            width: 150px;
+            border-radius: 50%;
+        }
+
+        /* SKILL & PROJECT */
+        .section {
+            padding: 30px;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .box {
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+
+        /* PORTFOLIO */
+        .portfolio {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .portfolio img {
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        /* KONTAK */
+        .contact {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Skills</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- PROFILE -->
+    <div class="profile">
+        <img src="https://via.placeholder.com/150" alt="Foto Profil">
+        <h2>Wulandari</h2>
+        <p>Mahasiswa Informatika</p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+        <h2 align="center">Skills</h2>
+        <div class="skills">
+            <div class="box">HTML</div>
+            <div class="box">CSS</div>
+            <div class="box">Java</div>
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+        <h2 align="center">Projects</h2>
+        <div class="projects">
+            <div class="box">Website Portfolio</div>
+            <div class="box">Aplikasi Java</div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="section">
+        <h2 align="center">Portfolio</h2>
+        <div class="portfolio">
+            <img src="https://via.placeholder.com/250x150">
+            <img src="https://via.placeholder.com/250x150">
+            <img src="https://via.placeholder.com/250x150">
+        </div>
+    </div>
+
+    <!-- KONTAK -->
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>Email: wulan@email.com</p>
+        <p>Instagram: @wulan</p>
+    </div>
+
+</body>
+</html>
