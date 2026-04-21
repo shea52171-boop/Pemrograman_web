@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Wulan</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .hero h1 {
+      margin: 15px 0 5px;
+    }
+
+    .hero p {
+      color: gray;
+    }
+
+    /* Portfolio */
+    .portfolio {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .container img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Skills */
+    .skills {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .skill-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: white;
+      padding: 15px 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* About */
+    .about {
+      padding: 40px 60px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Wulan</h2>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Portfolio</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="almet.JPG"Foto Wulan">
+    <h1>Wulandari</h1>
+    <p>Mahasiswa Informatika | Creative | Basket Enthusiast</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="container">
+      <img src="himpunana mahasiswa islam.JPEG">
+      <img src="himpunana mahasiswa islam.JPEG">
+      <img src="himpunana mahasiswa islam.JPEG">
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <div class="skill">Java</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Saya memiliki pengalaman sebagai model dan admin butik di Kota Bima. 
+      Saya juga aktif dalam organisasi HMI dan memiliki hobi bermain basket sejak SMA, 
+      serta pernah mengikuti berbagai kompetisi dan meraih juara.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Instagram: @username</p>
+    <p>Email: kamu@email.com</p>
+  </section>
+
+</body>
+</html>
