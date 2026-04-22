@@ -91,7 +91,7 @@
     }
 
     .skill {
-      background: rgb(235, 1, 87);
+      background: rgb(241, 1, 89);
       padding: 15px 25px;
       border-radius: 15px;
       box-shadow: 0 5px 15px hsl(0, 10%, 92%);
@@ -129,10 +129,27 @@ background: rgb(255, 0, 0);
 
   
 }
+.skill {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill img {
+  margin-bottom: 10px;
+}
   </style>
 
 </head>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 <body>
 
   <!-- Navbar -->
@@ -163,16 +180,42 @@ background: rgb(255, 0, 0);
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="skill-list">
-      <div class="skill">Java</div>
-      <div class="skill">Coreldraw</div>
-      <div class="skill">Word</div>
-      <div class="skill">HTML</div>
-      <div class="skill">CSS</div>
+ <section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-list">
+
+    <div class="skill">
+      <i class="devicon-java-plain colored"></i>
+      <p>Java</p>
     </div>
+
+    <div class="skill">
+      <img src="corel.png" width="40">
+      <p>CorelDraw</p>
+    </div>
+
+    <div class="skill">
+      <img src="excel.png" width="40">
+      <p>Excel</p>
+    </div>
+
+    <div class="skill">
+      <img src="word.png" width="40">
+      <p>Word</p>
+    </div>
+
+    <div class="skill">
+      <i class="devicon-html5-plain colored"></i>
+      <p>HTML</p>
+    </div>
+
+    <div class="skill">
+      <i class="devicon-css3-plain colored"></i>
+      <p>CSS</p>
+    </div>
+
+  </div>
+</section>
   </section>
 
   <!-- About -->
