@@ -1,187 +1,281 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Wulan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <title>Portfolio Wulan</title>
 
-        /* HEADER NAV */
-        header {
-            background-color: #fd007b;
-            padding: 15px;
-        }
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-        nav a {
-            color: rgb(255, 0, 136);
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6096b;
+    }
 
-        nav {
-            text-align: center;
-        }
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: rgb(248, 5, 147);
+      box-shadow: 0 2px 10px rgb(248, 242, 242);
+    }
 
-        /* PROFILE */
-        .profile {
-            text-align: center;
-            padding: 40px;
-        }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
 
-        .profile img {
-            width: 150px;
-            border-radius: 50%;
-        }
+    nav ul li {
+      cursor: pointer;
+    }
 
-        /* SKILL & PROJECT */
-        .section {
-            padding: 30px;
-        }
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-        .skills, .projects {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(248, 3, 138, 0.921);
+    }
 
-        .box {
-            padding: 15px;
-            background-color: #ff0066;
-            border-radius: 10px;
-        }
+    .hero h1 {
+      margin: 15px 0 5px;
+    }
 
-        /* PORTFOLIO */
-        .portfolio {
-            display: flex;
-            overflow-x: auto;
-            gap: 15px;
-            padding: 20px;
-        }
+    .hero p {
+      color: rgb(255, 50, 170);
+    }
 
-        .portfolio img {
-            width: 250px;
-            border-radius: 10px;
-        }
+    /* Portfolio */
+    .portfolio {
+      text-align: center;
+      padding: 40px;
+    }
 
-        /* KONTAK */
-        .contact {
-            text-align: center;
-            padding: 30px;
-            background-color: #050001;
-            color: hwb(0 95% 5%);
-        }
-    </style>
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .container img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgb(255, 255, 255);
+      transition: 0.3s;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Skills */
+    .skills {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .skill-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: rgb(241, 1, 89);
+      padding: 15px 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px hsl(0, 10%, 92%);
+      background: blue;
+background: #00bcd4;
+background: rgb(255, 0, 0);
+    }
+
+    /* About */
+    .about {
+      padding: 40px 60px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      margin-top: 40px;
+    }
+    .ig-btn {
+  background: #E1306C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.ig-btn:hover {
+  background: #b87188;
+
+
+  
+}
+.skill {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill img {
+  margin-bottom: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: linear-gradient(to right, #ff4d8d, #ff6fa5);
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}.navbar a:hover {
+  opacity: 0.8;
+}
+  </style>
+
 </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+ <nav class="navbar">
+  <h2 class="logo">Wulan</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
-    <!-- PROFILE -->
-    <div class="profile">
-        <img src="img/foto saya.jpg">
-        <h2>Wulandari</h2>
-        <p>Mahasiswa Informatika</p>
+  <!-- Hero -->
+  <section class="hero">
+    <img src="almet.JPG"Foto Wulan">
+    <h1>Wulandari</h1>
+    <p>Mahasiswa Informatika | Creative | Basket Enthusiast</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="container">
+      <img src="himpunana mahasiswa islam.JPEG">
+      <img src="basketjuara.jpeg">
+      <img src="bank mekar.jpeg">
+    </div>
+  </section>
+
+ <section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-list">
+
+    <div class="skill">
+      <i class="devicon-java-plain colored"></i>
+      <p>Java</p>
     </div>
 
-    <!-- SKILLS -->
-    <div class="section">
-        <h2 align="center">Skills</h2>
-        <div class="skills">
-            <div class="box">coreldraw</div>
-            <div class="box">canva</div>
-            <div class="box">Java</div>
-            <div class="box">Html</div>
-        </div>
+    <div class="skill">
+      <img src="coreldraw.png" width="40">
+      <p>CorelDraw</p>
     </div>
 
-    <!-- PROJECTS -->
-    <div class="section">
-        <h2 align="center">Projects</h2>
-        <div class="projects">
-            <div class="box">Website Portfolio</div>
-            <div class="box">Aplikasi Java</div>
-        </div>
+    <div class="skill">
+      <img src="exel.png" width="40">
+      <p>Excel</p>
     </div>
 
-    <!-- PORTFOLIO -->
-    <div class="section">
-        <h2 align="center">Portfolio</h2>
-        <div class="portfolio">
-            <img src="almet.JPG">
-            <img src="almet.JPG">
-            <img src="almet.JPG">
-        </div>
+    <div class="skill">
+      <img src="word.png" width="40">
+      <p>Word</p>
     </div>
 
-    <!-- KONTAK -->
-    <div class="contact">
-        <h2>Contact</h2>
-        <p>Email: wulan@email.com</p>
-        <p>Instagram: @wlaan_drr</p>
+    <div class="skill">
+      <i class="devicon-html5-plain colored"></i>
+      <p>HTML</p>
     </div>
-<!-- PENGALAMAN -->
-<div class="section">
-    <h2 align="center">Pengalaman</h2>
-    <div class="projects">
-        <div class="box">
-            <h3>Bank Mekar (BUMN)</h3>
-            <p>2024</p>
-            <p>sebelum menjadi mahasiswa Universitas mecubuana Yogyakarta, saya pernah bekerja di BUMN Bank Mekar dan posisi sabai Account Officer (AO),atau bagian dari tim operasional, membantu dalam pelayanan dan administrasi nasabah.</p>
-        </div>
-<img src="bank mekar.jpeg" alt="">
-        <div class="box">
-            <h3>Model - Niaso Women Fashion</h3>
-            <p>2023</p>
-            <p> Saya akan menceritakan pengalaman kerja saya. Pada bulan Mei 2023, tepat setelah hari kelulusan, saya mulai bekerja sebagai model di butik Niaso Women Fashion yang berlokasi di Kota Bima. Saya bekerja di posisi tersebut selama kurang lebih 4 bulan.
 
-Selama bekerja sebagai model, saya bertanggung jawab untuk melakukan sesi pemotretan produk, membuat video review untuk produk-produk baru yang datang, serta membantu dalam pembuatan konten promosi butik.
+    <div class="skill">
+      <i class="devicon-css3-plain colored"></i>
+      <p>CSS</p>
+    </div>
 
-Setelah 3 bulan, saya dipindahkan ke cabang lain dan dipercaya untuk mengisi posisi sebagai admin butik. Dalam peran ini, saya bertanggung jawab untuk mengelola promosi produk, menyusun jadwal Brand Ambassador (BA) yang telah bekerja sama, serta mengatur dan menampilkan konten review. Selain itu, saya juga menangani persiapan barang untuk pengiriman, baik ke luar kota maupun dalam daerah..</p>
-        </div>
-        <div class="box">
-    <h3>Himpunan Mahasiswa Islam (HMI)</h3>
-    <p>2025 - Sekarang</p>
-    <p><b>Bidang Kewirausahaan dan Pengembangan Profesi (KPP)</b></p>
+  </div>
+</section>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
     <p>
-        Aktif sebagai pengurus yang berfokus pada pengembangan kewirausahaan dan profesionalisme anggota.
-        Berperan dalam meningkatkan keterampilan anggota agar siap bersaing di dunia kerja serta mendorong kemandirian ekonomi.
+      Saya memiliki pengalaman sebagai model dan admin butik di Kota Bima, dan pernah bekerja di BUMN Bank Mekar sebagai Account Officer.
+      Saya juga aktif dalam organisasi HMI dan memiliki hobi bermain basket sejak SMA, 
+      serta pernah mengikuti berbagai kompetisi dan meraih juara.
     </p>
-</div>
-<img src="himpunana mahasiswa islam.JPEG" alt="">
-<img src="HMIkorsa.JPEG" alt="">
-<!-- HOBI -->
-<div class="section">
-    <h2 align="center">Hobi</h2>
-    <div class="skills">
-        <div class="box">
-            <h3>Basket</h3>
-            <p>
-                Saya memiliki hobi bermain basket yang mulai saya tekuni sejak awal masuk SMA pada tahun 2020. Selama aktif di kegiatan tersebut, saya telah mengikuti berbagai event pertandingan, baik tingkat lokal maupun regional.
+  </section>
 
-Saya pernah mengikuti event tingkat Pulau Sumbawa dan berhasil meraih juara 2. Selain itu, untuk event antar sekolah di Kota Bima, tim saya secara konsisten meraih juara 1. Saya juga aktif mengikuti kegiatan sparing atau latihan tanding dengan berbagai sekolah, seperti SMA, SMK, dan MAN.
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>@instagram</p>
+    <a href="https://instagram.com/wlan_drrr" target="_blank" class="ig-btn">
+  Kunjungi Instagram
+</a>
+    <p>Email: wulandari@gmail.com</p>
+  </section>
 
-Melalui pengalaman ini, saya tidak hanya mengembangkan kemampuan dalam olahraga basket, tetapi juga melatih kerja sama tim, disiplin, dan sportivitas.
-            </p>
-        </div>
-        <img src="lhgirls.jpeg" alt="">
-        <img src="basket.jpeg" alt="">
-    </div>
-</div>
-    </div>
-</div>
 </body>
 </html>
