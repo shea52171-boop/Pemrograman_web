@@ -15,7 +15,7 @@ body {
 }
 
 .title {
-    color: white;
+    color: rgb(226, 20, 223);
     text-align: center;
 }
 
@@ -32,13 +32,13 @@ body {
 .title hr {
     width: 50em;
     max-width: 90vw;
-    border: 1px solid white;
+    border: 1px solid rgb(174, 38, 131);
     margin: 3em auto;
     opacity: 0.5;
 }
 
 .form-container {
-    background-color: rgba(189, 119, 178, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ body {
     padding: 0.5em 1em;
     border: none;
     border-radius: 0.5em;
-    background-color: #ff5722;
+    background-color: #ff6f22;
     color: white;
     cursor: pointer;
 }
