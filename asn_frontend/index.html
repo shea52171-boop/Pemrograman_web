@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Organisasi Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        .tree ul {
+            padding-top: 20px; 
+            position: relative;
+            transition: all 0.5s;
+        }
+        .tree li {
+            float: left; 
+            text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+        /* Membuat garis penghubung */
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            right: 50%;
+            border-top: 1px solid #ccc;
+            width: 50%; 
+            height: 20px;
+        }
+        .tree li::after {
+            right: auto; 
+            left: 50%;
+            border-left: 1px solid #ccc;
+        }
+        .tree li:only-child::after, .tree li:only-child::before {
+            display: none;
+        }
+        .tree li:only-child { padding-top: 0; }
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+        .tree li:last-child::before {
+            border-right: 1px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+        .tree ul ul::before {
+            content: '';
+            position: absolute; 
+            top: 0; 
+            left: 50%;
+            border-left: 1px solid #ccc;
+            width: 0; 
+            height: 20px;
+        }
+        /* Gaya Kotak */
+        .tree li div {
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .manager { background-color: #e3f2fd !important; border-color: #2196f3 !important; }
+    </style>
+</head>
+<body>
+
+<div class="tree">
+    <ul>
+        <li>
+            <div>Pemilik</div>
+            <ul>
+                <li>
+                    <div class="manager">Manager Operasional</div>
+                    <ul>
+                        <!-- Bagian Produksi -->
+                        <li>
+                            <div>Manager Produksi</div>
+                            <ul>
+                                <li>
+                                    <div>Supervisor</div>
+                                    <ul>
+                                        <li><div>Karyawan Raw Material</div></li>
+                                        <li><div>Karyawan Bagian Proses</div></li>
+                                        <li><div>Karyawan Bagian Output</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Bagian Keuangan -->
+                        <li>
+                            <div>Manager Finance</div>
+                            <ul>
+                                <li><div>Kasir</div></li>
+                            </ul>
+                        </li>
+                        <!-- Bagian Pemasaran -->
+                        <li>
+                            <div>Manager Marketing</div>
+                            <ul>
+                                <li>
+                                    <div>Supervisor</div>
+                                    <ul>
+                                        <li><div>Sales Marketing</div></li>
+                                        <li><div>Kepala Gudang</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,285 @@
+update Tugas1.html
+8859d2f
+folio.html
+@@ -1,281 +0,0 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio Wulan</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6096b;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: rgb(248, 5, 147);
+      box-shadow: 0 2px 10px rgb(248, 242, 242);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li {
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 10px 25px rgba(248, 3, 138, 0.921);
+    }
+
+    .hero h1 {
+      margin: 15px 0 5px;
+    }
+
+    .hero p {
+      color: rgb(255, 50, 170);
+    }
+
+    /* Portfolio */
+    .portfolio {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .container img {
+      width: 250px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgb(255, 255, 255);
+      transition: 0.3s;
+    }
+
+    .container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Skills */
+    .skills {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .skill-list {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: rgb(241, 1, 89);
+      padding: 15px 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px hsl(0, 10%, 92%);
+      background: blue;
+background: #00bcd4;
+background: rgb(255, 0, 0);
+    }
+
+    /* About */
+    .about {
+      padding: 40px 60px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      margin-top: 40px;
+    }
+    .ig-btn {
+  background: #E1306C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.ig-btn:hover {
+  background: #b87188;
+
+
+  
+}
+.skill {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 100px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skill i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill img {
+  margin-bottom: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: linear-gradient(to right, #ff4d8d, #ff6fa5);
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  position: relative;
+}.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}.navbar a:hover {
+  opacity: 0.8;
+}
+  </style>
+
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<body>
+
+ <nav class="navbar">
+  <h2 class="logo">Wulan</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="almet.JPG"Foto Wulan">
+    <h1>Wulandari</h1>
+    <p>Mahasiswa Informatika | Creative | Basket Enthusiast</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="container">
+      <img src="himpunana mahasiswa islam.JPEG">
+      <img src="basketjuara.jpeg">
+      <img src="bank mekar.jpeg">
+    </div>
+  </section>
+
+ <section class="skills">
+  <h2>Skills</h2>
+  <div class="skill-list">
+
+    <div class="skill">
+      <i class="devicon-java-plain colored"></i>
+      <p>Java</p>
+    </div>
+
+    <div class="skill">
+      <img src="coreldraw.png" width="40">
+      <p>CorelDraw</p>
+    </div>
+
+    <div class="skill">
+      <img src="exel.png" width="40">
+      <p>Excel</p>
+    </div>
+
+    <div class="skill">
+      <img src="word.png" width="40">
+      <p>Word</p>
+    </div>
+
+    <div class="skill">
+      <i class="devicon-html5-plain colored"></i>
+      <p>HTML</p>
+    </div>
+
+    <div class="skill">
+      <i class="devicon-css3-plain colored"></i>
+      <p>CSS</p>
+    </div>
+
+  </div>
+</section>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Saya memiliki pengalaman sebagai model dan admin butik di Kota Bima, dan pernah bekerja di BUMN Bank Mekar sebagai Account Officer.
+      Saya juga aktif dalam organisasi HMI dan memiliki hobi bermain basket sejak SMA, 
+      serta pernah mengikuti berbagai kompetisi dan meraih juara.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>@instagram</p>
+    <a href="https://instagram.com/wlan_drrr" target="_blank" class="ig-btn">
+  Kunjungi Instagram
+</a>
+    <p>Email: wulandari@gmail.com</p>
+  </section>
+
+</body>
+</html>
