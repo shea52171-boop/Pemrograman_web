@@ -12,13 +12,9 @@ body {
 }
 
 .container {
-.gambar-bakery {
-    width: 300px;      /* Tentukan lebar yang sama */
-    height: 250px;     /* Tentukan tinggi yang sama */
-    object-fit: cover; /* AGAR GAMBAR TIDAK GEPENG */
-    border-radius: 10px; /* Opsional: agar pinggirannya melengkung cantik */
-}
-
+    width: 70%;
+    max-height: 0;
+    overflow: hidden;
 }
 
 /* 1. Header */
