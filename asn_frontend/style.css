@@ -166,7 +166,7 @@ footer {
 }
 
 .gallery img {
-  width: 100%;    /* Lebar mengikuti kotak grid */
+  width: 100%;   
   height: 200px;  /* Tinggi dipatok sama semua */
   object-fit: cover;
 }
