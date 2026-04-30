@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 70%;
-    margin: auto;
+    margin: 0;
     overflow: hidden;
 }
 
@@ -89,7 +89,7 @@ header nav ul li a {
     cursor: pointer;
 }
 
-/* 3. Body Content */
+
 .main-content {
     padding: 40px 0;
     text-align: center;
@@ -167,7 +167,7 @@ footer {
 
 .gallery img {
   width: 70%;   
-  height: 100%;  /* Tinggi dipatok sama semua */
+  height: 100%;  
   object-fit: cover;
 }
 
