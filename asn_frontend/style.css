@@ -1,173 +1,37 @@
-/* Reset Dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #9c2c60;
-}
 
 .container {
-    width: 70%;
-    max-height: 0;
-    overflow: hidden;
-}
-
-/* 1. Header */
-header {
-    background: #fff;
-    color: #333;
-    padding: 20px 0;
-    border-bottom: 2px solid #efefef;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo h1 {
-    float: left;
-}
-
-header .logo span {
-    color: #a859b5;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    width: 85%;
+    margin: 0 auto;
+   
 }
 
 
-.hero {
-    background: linear-gradient(rgba(204, 139, 139, 0.5), rgba(229, 161, 161, 0.5)), url('https://placeholder.com');
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #f62985;
+.card img {
+    width: 100%;     
+    height: 250px;     
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
+    display: block;
 }
 
-.hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.search-form {
-    margin-top: 20px;
-}
-
-.search-form input {
-    padding: 10px;
-    width: 300px;
-    border-radius: 5px 0 0 5px;
-    border: none;
-}
-
-.search-form button {
-    padding: 10px 20px;
-    background: #c21f96;
-    color: white;
-    border: none;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-
-.main-content {
-    padding: 40px 0;
-    text-align: center;
-}
 
 .grid-produk {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsif */
+    gap: 25px;
     margin-top: 30px;
 }
 
 .card {
-    border: 1px solid #ddd;
-    padding: 20px;
+    border: 1px solid #d60b71;
     border-radius: 10px;
+    overflow: hidden; 
+    background: #ba6689;
+    transition: transform 0.3s;
+    padding: 0; 
 }
 
-/* 4. Contact Section */
-.contact-section {
-    background: #f9f9f9;
-    padding: 40px 0;
-}
 
-.contact-wrapper {
-    display: flex;
-    gap: 50px;
-    margin-top: 20px;
+.card h4, .card p {
+    padding: 10px 15px;
 }
-
-.contact-form {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form input, .contact-form textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.btn-send {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-.btn-wa {
-    display: inline-block;
-    background: #dc175c;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* 5. Footer */
-footer {
-    background: #e1a3c3;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 40px;
-}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  /* Otomatis membagi kolom, minimal lebar 250px */
-  gap: 15px;
-}
-
-.gallery img {
-  width: 70%;   
-  height: 100%;  
-  object-fit: cover;
-}
-
